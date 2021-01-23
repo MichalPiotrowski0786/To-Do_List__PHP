@@ -11,7 +11,7 @@ if (isset($_POST["button"])) {
     }
 
     //walidacja danych
-    if (empty($txt) || $txt = "") {
+    if (!isset($txt) || empty($txt) || $txt = "") {
         $error = "NieWprowadziłeśPoprawnegoTekstu";
         header("Location: index.php?error=".urlencode($error));
         exit(); 
