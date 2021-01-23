@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F28907;
+    font-size: 15px;
+    line-height: 1.5em;
+    background-color: #0D0C0C;
+
+}
+#zawartosc {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #32498C;
+    width: 80%; 
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+header h1 {
+    color: #F28907;
+    font-size: 40PX;
+    padding: 20px;
+    border-bottom: 3px solid #F28907;
+}
+#eventy {
+    background-color: #324BD9;
+    width: 90%;
+    margin: 40px auto;
+    overflow: auto;
+}
+.tekst {
+    color: #F28907;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.event {
+    text-shadow:
+    -1px -1px 3px #000,
+    1px -1px 3px #000,
+    -1px 1px 3px #000,
+    1px 1px 3px #000;  
+
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #F28907;
+    /*#99ff99 - event completed*/
+    /*#ff9999 - event after deadline*/
+}
+
+.event.done {
+    background-color: #99ff99;
+    /*#99ff99 - event completed*/
+    /*#ff9999 - event after deadline*/
+}
+
+.event.notdone {
+    background-color: #ff9999;
+    /*#99ff99 - event completed*/
+    /*#ff9999 - event after deadline*/
+}
+.event:hover {
+    text-shadow:
+    -1px -1px 5px #000,
+    1px -1px 5px #000,
+    -1px 1px 5px #000,
+    1px 1px 5px #000; 
+    font-size: 20px;
+    cursor: pointer;
+}
+#formularz {
+    width: 90%;
+    margin: 40px auto;
+}
+
+#formularz input[type='text'] {
+    width: 51%;
+    height: 100px;
+    padding: 10px;
+    margin: 5px auto;
+    border: 3px solid #F28907;
+}
+
+#button {
+    margin: 5px auto;
+    padding: 10px;
+    height: 40px;
+    width: 20%;
+    border: 3px solid #F28907;
+}
+#button:hover {
+    border: 3px solid black;
+}
+
+
