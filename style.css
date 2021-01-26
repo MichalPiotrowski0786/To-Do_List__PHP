@@ -39,7 +39,7 @@ header h1 {
     display: grid;
     grid-auto-flow: column;
     color: #FFF;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -54,21 +54,20 @@ header h1 {
     1px -1px 3px #000,
     -1px 1px 3px #000,
     1px 1px 3px #000;  
-    padding: 25px 15px 5px 15px;
+    padding: 25px 15px 15px 15px;
     margin: 5px;
     border: 1px solid #5D5C61;
-    /*#99ff99 - event completed*/
-    /*#ff9999 - event after deadline*/
+    line-height: 50px;
 }
 
 .event.done {
-    background-color: #99ff99;
+    background-color: #00ff00;
     /*#99ff99 - event completed*/
     /*#ff9999 - event after deadline*/
 }
 
 .event.notdone {
-    background-color: #ff9999;
+    background-color: #ff0000;
     /*#99ff99 - event completed*/
     /*#ff9999 - event after deadline*/
 }
@@ -85,12 +84,17 @@ header h1 {
     margin: 40px auto;
 }
 
-#formularz input[type='text'] {
-    width: 51%;
-    height: 100px;
-    padding: 10px;
-    margin: 5px auto;
-    border: 3px solid #5D5C61;
+#textArea{
+    padding: 5px;
+    border: 1px solid #5D5C61;
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+}
+  
+  :-moz-placeholder {
+    text-align: left;
 }
 
 #btn0 {
@@ -103,6 +107,16 @@ header h1 {
 #btn0:hover {
     border: 3px solid black;
     cursor: pointer;
+}
+
+.formLabel {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 3px #000,
+    1px -1px 3px #000,
+    -1px 1px 3px #000,
+    1px 1px 3px #000;  
 }
 
 

@@ -49,9 +49,10 @@
 
         <div id="formularz">
             <form action="create.php" method="post">
-                <input type='text' placeholder='Wpisz swój tekst: ' name='zadanie' id='zadanie'>
+                <label class="formLabel">Dodaj nowe zadanie</label><br>
+                <textarea placeholder='Wpisz swój tekst: ' name='textArea' id='textArea' rows="10" cols=100%></textarea>
                 <p><input type='checkbox' name='check' id='check'>
-                <label for="check">Zadanie ukończone?</label></p>
+                <label for="check">Zadanie jest już ukończone</label></p>
                 <input type='submit' value='Dodaj' name='create' id='btn0'>               
             </form>
         </div>
