@@ -39,6 +39,7 @@ header h1 {
     margin-left: 5px;
 }
 .event {
+    text-align: center;
     text-shadow:
     -1px -1px 3px #000,
     1px -1px 3px #000,
@@ -71,7 +72,6 @@ header h1 {
     -1px 1px 5px #000,
     1px 1px 5px #000; 
     font-size: 20px;
-    cursor: pointer;
 }
 #formularz {
     width: 90%;
@@ -86,15 +86,42 @@ header h1 {
     border: 3px solid #F28907;
 }
 
-#button {
+#btn0 {
     margin: 5px auto;
     padding: 10px;
     height: 40px;
-    width: 20%;
+    width: auto;
     border: 3px solid #F28907;
 }
-#button:hover {
+#btn0:hover {
     border: 3px solid black;
+    cursor: pointer;
 }
+
+#btn1 {
+    margin: 3px auto;
+    padding: auto;
+    height: 20px;
+    width: auto;
+    border: 1px solid black;
+}
+#btn1:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#btnEdit {
+    margin: 3px auto;
+    padding: auto;
+    height: 20px;
+    width: auto;
+    border: 1px solid black;
+}
+#btnEdit:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
 
 

@@ -30,22 +30,30 @@
                     <li class='event'>
                     <?php endif ?>
 
-                    <span class='tekst'><?php echo $wiersz["txt"]?></span>
-                    
+                    <div class='tekst'><?php echo $wiersz["zadanie"]?></div>
+                    <form action="delete.php" method="post">
+                            <input type='hidden' value="<?php echo trim($wiersz["id"]); ?>" name='hiddenDelete' id='hiddenDelete'>  
+                            <input type='submit' value="Usuń" name='delete' id='btn1'>            
+                        </form>
+                    <form action="edit.php" method="post">
+                            <input type='hidden' value="<?php echo trim($wiersz["isDone"]); ?>" name='hiddenEdit' id='hiddenEdit'>
+                            <input type='hidden' value="<?php echo trim($wiersz["id"]); ?>" name='hiddenId' id='hiddenId'> 
+                            <input type='submit' value="Zmień status" name='edit' id='btnEdit'>            
+                        </form>
+                    </li>
                 <?php endwhile;?>
             </ul>
         </div>
 
         <div id="formularz">
-            <form action="process.php" method="post">
-                <div id="srodek">
-                <p><input type='text' placeholder='Wpisz swój tekst: ' name='txt' id='txt'></p>
+            <form action="create.php" method="post">
+                <input type='text' placeholder='Wpisz swój tekst: ' name='zadanie' id='zadanie'>
                 <p><input type='checkbox' name='check' id='check'>
                 <label for="check">Zadanie ukończone?</label></p>
-                <input type='submit' value='Dodaj' name='button' id='button'>   
-                </div>             
+                <input type='submit' value='Dodaj' name='create' id='btn0'>               
             </form>
         </div>
+
     </div>
 </body>
 </html>
