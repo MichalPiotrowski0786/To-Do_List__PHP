@@ -16,7 +16,7 @@
 <body>
     <div id="zawartosc">
         <header>
-            <h1 id='naglowek'>To-Do List</h1>
+            <h1 id='naglowek'>Minimalistic To-Do List</h1>
         </header>
         <div id="eventy">
             <ul>
@@ -50,13 +50,16 @@
         <div id="formularz">
             <form action="create.php" method="post">
                 <label class="formLabel">Dodaj nowe zadanie</label><br>
-                <textarea placeholder='Wpisz swój tekst: ' name='textArea' id='textArea' rows="10" cols=100%></textarea>
                 <p><input type='checkbox' name='check' id='check'>
                 <label for="check">Zadanie jest już ukończone</label></p>
+                <textarea type="text" placeholder='Wpisz swój tekst: ' name='textArea' id='textArea' rows="10" cols=100%></textarea><br>
                 <input type='submit' value='Dodaj' name='create' id='btn0'>               
             </form>
         </div>
 
+    </div>
+    <div class="footer">
+        <p>Michał Piotrowski 2021</p>
     </div>
 </body>
 </html>

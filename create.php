@@ -1,7 +1,7 @@
 <?php include "database.php";
 
 if (isset($_POST["create"])) {
-    $zadanie = mysqli_real_escape_string($con,$_POST["zadanie"]);
+    $zadanie = mysqli_real_escape_string($con,$_POST["textArea"]);
     $isDone = 0;
 
     if(isset($_POST["check"])){
@@ -16,7 +16,7 @@ if (isset($_POST["create"])) {
         header("Location: index.php?error=".urlencode($error));
         exit(); 
     } else {
-        $query = "INSERT INTO events (isDone, zadanie) VALUES('$isDone','$zadanie')";
+        $query = "INSERT INTO events (isDone, zadanie) VALUES ( '$isDone', '$zadanie')";
         if (!mysqli_query($con, $query)) {
             die("Błąd: ".mysqli_error($con));
         } else {
