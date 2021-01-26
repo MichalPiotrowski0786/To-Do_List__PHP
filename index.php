@@ -21,7 +21,6 @@
         <div id="eventy">
             <ul>
                 <?php while($wiersz = mysqli_fetch_assoc($eventy)): ?>
-
                     <?php if(1 == $wiersz["isDone"]): ?>
                     <li class='event done'>
                     <?php elseif(0 == $wiersz["isDone"]): ?>
@@ -30,16 +29,19 @@
                     <li class='event'>
                     <?php endif ?>
 
-                    <div class='tekst'><?php echo $wiersz["zadanie"]?></div>
-                    <form action="delete.php" method="post">
-                            <input type='hidden' value="<?php echo trim($wiersz["id"]); ?>" name='hiddenDelete' id='hiddenDelete'>  
-                            <input type='submit' value="Usuń" name='delete' id='btn1'>            
+                    <div class='tekst'><?php echo $wiersz["zadanie"]?>
+                        <div class='tekst b'>
+                        <form action="edit.php" method="post">
+                                <input type='hidden' value="<?php echo trim($wiersz["isDone"]); ?>" name='hiddenEdit' id='hiddenEdit'>
+                                <input type='hidden' value="<?php echo trim($wiersz["id"]); ?>" name='hiddenId' id='hiddenId'> 
+                                <input type='submit' value="Zmień status" name='edit' id='btn0'>            
                         </form>
-                    <form action="edit.php" method="post">
-                            <input type='hidden' value="<?php echo trim($wiersz["isDone"]); ?>" name='hiddenEdit' id='hiddenEdit'>
-                            <input type='hidden' value="<?php echo trim($wiersz["id"]); ?>" name='hiddenId' id='hiddenId'> 
-                            <input type='submit' value="Zmień status" name='edit' id='btnEdit'>            
+                        <form action="delete.php" method="post">
+                                <input type='hidden' value="<?php echo trim($wiersz["id"]); ?>" name='hiddenDelete' id='hiddenDelete'>  
+                                <input type='submit' value="Usuń" name='delete' id='btn0'>            
                         </form>
+                        </div>
+                    </div>
                     </li>
                 <?php endwhile;?>
             </ul>

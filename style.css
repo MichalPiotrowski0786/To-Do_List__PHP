@@ -5,51 +5,58 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #F28907;
+    color: #FFF;
     font-size: 20px;
     line-height: 1.5em;
-    background-color: #0D0C0C;
+    background-color: #7395AE;
 
 }
 #zawartosc {
     margin-left: auto;
     margin-right: auto;
-    background-color: #32498C;
+    background-color: #557A95;
     width: 80%; 
     overflow: hidden;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 5px;
+    border: #5D5C61 solid 5px;
+    border-radius: 10px;
 }
 header h1 {
-    color: #F28907;
+    color: #FFF;
     font-size: 40PX;
     padding: 20px;
-    border-bottom: 3px solid #F28907;
+    border-bottom: 3px solid #5D5C61;
 }
 #eventy {
-    background-color: #324BD9;
+    background-color: #B1A296;
     width: 90%;
     margin: 40px auto;
     overflow: auto;
 }
+
 .tekst {
-    color: #F28907;
+    display: grid;
+    grid-auto-flow: column;
+    color: #FFF;
+    font-size: 50px;
     font-weight: bold;
-    margin-left: 5px;
 }
+
+.tekst.b {
+    display: justify;
+    justify-content: flex-end;
+}
+
 .event {
-    text-align: center;
     text-shadow:
     -1px -1px 3px #000,
     1px -1px 3px #000,
     -1px 1px 3px #000,
     1px 1px 3px #000;  
-
-    list-style: none;
-    padding: 10px;
+    padding: 25px 15px 5px 15px;
     margin: 5px;
-    border: 1px solid #F28907;
+    border: 1px solid #5D5C61;
     /*#99ff99 - event completed*/
     /*#ff9999 - event after deadline*/
 }
@@ -83,7 +90,7 @@ header h1 {
     height: 100px;
     padding: 10px;
     margin: 5px auto;
-    border: 3px solid #F28907;
+    border: 3px solid #5D5C61;
 }
 
 #btn0 {
@@ -91,36 +98,14 @@ header h1 {
     padding: 10px;
     height: 40px;
     width: auto;
-    border: 3px solid #F28907;
+    border: 3px solid #5D5C61;
 }
 #btn0:hover {
     border: 3px solid black;
     cursor: pointer;
 }
 
-#btn1 {
-    margin: 3px auto;
-    padding: auto;
-    height: 20px;
-    width: auto;
-    border: 1px solid black;
-}
-#btn1:hover {
-    border: 2px solid black;
-    cursor: pointer;
-}
 
-#btnEdit {
-    margin: 3px auto;
-    padding: auto;
-    height: 20px;
-    width: auto;
-    border: 1px solid black;
-}
-#btnEdit:hover {
-    border: 2px solid black;
-    cursor: pointer;
-}
 
 
 
